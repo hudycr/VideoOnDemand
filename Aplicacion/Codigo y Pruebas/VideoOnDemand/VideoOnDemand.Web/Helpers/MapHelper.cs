@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using VideoOnDemand.Entities;
+using VideoOnDemand.Web.Models;
 
 namespace VideoOnDemand.Web.Helpers
 {
@@ -13,7 +15,7 @@ namespace VideoOnDemand.Web.Helpers
         static MapHelper()
         {
             var config = new MapperConfiguration(x => {
-
+                x.CreateMap<Usuario, UsuarioViewModel>().ReverseMap();
 
                });
             mapper = config.CreateMapper();
