@@ -17,6 +17,7 @@ namespace ltracker.Data.Entities
         public decimal? DurationAVG { get; set; }
         public string Description { get; set; }
         public ICollection<Topic> Topics { get; set; }
+        public bool? Active { get; set; }
         public ICollection<Topic> OtherTopics { get; set; }
     }
 }
